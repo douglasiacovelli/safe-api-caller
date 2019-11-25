@@ -8,7 +8,5 @@ class RepositorySafe(
     private val apiCaller: SafeApiCaller
 ) {
 
-    suspend fun getPosts(): ResultWrapper<List<String>> {
-        return apiCaller.safeApiCall(dispatcher) { service.getPosts() }
-    }
+
 }

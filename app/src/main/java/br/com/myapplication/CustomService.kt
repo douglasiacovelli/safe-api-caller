@@ -4,6 +4,6 @@ import retrofit2.http.GET
 
 interface CustomService {
 
-    @GET("https://bla.com")
-    fun getPosts(): List<String>
+    @GET("https://demo8441544.mockable.io/teste")
+    suspend fun getPosts(): ResultWrapper<List<String>>
 }

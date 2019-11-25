@@ -7,7 +7,5 @@ class Repository(
     private val dispatcher: CoroutineDispatcher
 ) {
 
-    suspend fun getPosts(): ResultWrapper<List<String>> {
-        return safeApiCall(dispatcher) { service.getPosts() }
-    }
+
 }
